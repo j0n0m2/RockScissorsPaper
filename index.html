@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" type="text/css" >
+    <title>가위 바위 보</title>
+</head>
+<body>
+    <!--팝업-->
+    <div id="popup">
+        <h1 id="title">가위~바위~보</h1>
+        <form id="startGameForm" action="" method="get">
+            <label for="typingName"></label>
+            <input type="text" id="typingName" name="typingName" placeholder="이름" maxlength="5" required>
+            <button type="submit">시작하기</button>
+        </form>
+    </div>
+    <div id="backgroundBox"></div>
+
+    <!--게임-->
+    <div id="wrap">
+        <!-- 이름과 점수판 -->
+        <div id="board">
+            <!-- 사용자 -->
+            <div class="scoreBox">
+                <div class="nameBox">
+                    <p id="playerName">플레이어</p>
+                </div>
+                <p id="playerScore"></p>
+            </div>
+            <!-- 컴퓨터 -->
+            <div class="scoreBox">
+                <div class="nameBox">
+                    <p id="computerName">컴퓨터</p>
+                </div>
+                <p id="computerScore"></p>
+            </div>
+        </div>
+        <!-- 리셋버튼 -->
+        <div id="resetBtn"><img src="./img/resetIcon.png" alt="">Reset</div>
+        <!-- 결과버튼 -->
+         <div id="ResultBtn"><img src="./img/Result_Icon.png" clt="">Result</div>
+        <!-- 사용자와 컴퓨터가 선택한 걸 보여주는 부분 -->
+        <div id="selectBox">
+            <div id="playerSelectBox"><img id="playerSelect" src="./img/paperImg.png" alt=""></div>
+            <div id="computerSelectBox"><img id="computerSelect" src="./img/scissorsImg.png" alt=""></div>
+        </div>
+        <!-- 사용자 선택지 -->
+        <div id="selectBtn">
+            <span id="rock"><img src="./img/rockIcon.png" alt=""></span>
+            <span id="scissors"><img src="./img/scissorsIcon.png" alt=""></span>
+            <span id="paper"><img src="./img/paperIcon.png" alt=""></span>
+        </div>
+    </div>
+    <script src="./js/script.js" type="text/javascript"></script>
+</body>
+</html>
+
