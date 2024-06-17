@@ -21,13 +21,13 @@ function RSP() {
 
     switch(pcSelect) {
         case 0: // 가위
-            computerimg.src = "./img/scissorsimg.png";
+            computerimg.src = "./img/scissorsImg.png";
             break;
         case 1: // 바위
-            computerimg.src = "./img/rockimg.png";
+            computerimg.src = "./img/rockImg.png";
             break;
         case 2: // 보
-            computerimg.src = "./img/paperimg.png";
+            computerimg.src = "./img/paperImg.png";
             break;
         };
 
@@ -55,19 +55,19 @@ function checkMatchResult(mySelect, pcSelect) {
 //유저 선택지
 document.getElementById('scissors').addEventListener('click', function() {
     mySelect = 0;
-    document.getElementById('playerSelect').src = "./img/scissorsimg.png";
+    document.getElementById('playerSelect').src = "./img/scissorsImg.png";
     RSP();
 });
 
 document.getElementById('rock').addEventListener('click', function() {
     mySelect = 1;
-    document.getElementById('playerSelect').src = "./img/rockimg.png";
+    document.getElementById('playerSelect').src = "./img/rockImg.png";
     RSP();
 });
 
 document.getElementById('paper').addEventListener('click', function() {
     mySelect = 2;
-    document.getElementById('playerSelect').src = "./img/paperimg.png";
+    document.getElementById('playerSelect').src = "./img/paperImg.png";
     RSP();
 });
 
